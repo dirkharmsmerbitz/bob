@@ -18,7 +18,8 @@ map 'apt-get update && apt-get upgrade'
 # deploy content across all servers
 map 'deploy'
 
-# now we have 50 more servers active.
+# now we have 50 more servers active, get their IP addresses
+map 'bob PublicIpAddress'
 
 More examples:
 
@@ -33,7 +34,7 @@ snapshot <volumeId>
 # send that snapshot to another region
 sendsnap <region>
 
-# simple things.. send a text
+# simple things.. send a text to my iPhone
 message <email> "server is up and running"
 
 # simple things.. remember things in a redis server
