@@ -4,7 +4,8 @@ Snapshot of my ever changing bash profile, including functions that make using A
 ```
 - use of bash functions to encapsulate AWS command line complexity
 - functional devops, talk to many servers using map
-- concise syntax, easy to adapt and extend
+- concise syntax, default parameters reduce need for typing
+- easy to adapt and extend
 
 Examples:
 
