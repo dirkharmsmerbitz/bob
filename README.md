@@ -1,5 +1,5 @@
 # bob
-Snapshot of my ever changing .profile including bash functions that make using AWS easier.
+Snapshot of my ever changing bash profile, including functions that make using AWS easier.
 
 Examples:
 
