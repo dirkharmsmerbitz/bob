@@ -3,7 +3,7 @@ Snapshot of my ever changing bash profile, including functions that make using A
 
 ```
 - use of bash functions to encapsulate AWS command line complexity
-- use of functions devops syntax to talk to many servers 
+- functional devops, talk to many servers using map
 - easy to adapt and extend
 
 Examples:
