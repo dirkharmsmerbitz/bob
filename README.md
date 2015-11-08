@@ -4,7 +4,6 @@ Snapshot of my ever changing bash profile, including functions that make using A
 Examples:
 
 ```
-## rent 50 servers:
 # rent <instanceType> <count> <imageId> <zone> <securityids> <key>
 rent m4.10xlarge 50
 tag Project test `all`
