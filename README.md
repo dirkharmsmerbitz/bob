@@ -28,7 +28,7 @@ ebs 100 ; attach
 ebs 100 ; attach 
 raid0
 
-# create a snapshot of a EBS volume
+# create a snapshot of an EBS volume
 snapshot <volumeId>
 
 # send that snapshot to another region
