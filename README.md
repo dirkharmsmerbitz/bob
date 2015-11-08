@@ -30,7 +30,7 @@ raid0
 # create a snapshot of a EBS volume
 snapshot <volumeId>
 
-# send that volume to another region
+# send that snapshot to another region
 sendsnap <region>
 
 # simple things.. send a text
