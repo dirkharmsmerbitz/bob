@@ -1,9 +1,13 @@
 # bob
 Snapshot of my ever changing bash profile, including functions that make using AWS easier.
 
+```
+- use of bash functions to encapsulate AWS command line complexity
+- use of functions devops syntax to talk to many servers 
+- easy to adapt and extend
+
 Examples:
 
-```
 # rent <instanceType> <count> <imageId> <zone> <securityids> <key>
 rent m4.10xlarge 50
 tag Project test `all`
