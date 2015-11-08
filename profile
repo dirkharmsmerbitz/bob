@@ -140,6 +140,20 @@ function ipsinks { echo "IPsinks" ; cat x | awk '{ x[$7]++ } END { for (i in x) 
 # function flowlogbysource { cat x | grep -v REJECT | awk '$7=="172.31.25.126" { bytes[$6]+=$12} END{for(ip in bytes) print ip,bytes[ip]}'  | sort -nrk2 ; }
 # function flowlogbyconnection { cat x | awk '{ s[$6" to "$7]++ } END { for (i in s) { printf "%6s %15s\n", s[i], i } }' | sort -nr | head ; }
 
+### firewall ###
+# block an ip number: block x.x.x.x
+function block { iptables -I INPUT -s $1 -j DROP ; }
+
+# unblock an ip number: unblock x.x.x.x
+function unblock { iptables -D INPUT -s $1 -j DROP ; }
+
+# unblock by line number: unblockline x
+function unblockline { iptables -D INPUT $1 ; }
+
+# list blocked IPs with line numbers:  blocked
+function blocked { iptables -L INPUT --line-numbers | awk '/DROP/ {print $1 " " $5}' ; }
+
+
 # turn multiple instances on or off
 function on { aws ec2 start-instances --instance-ids `<slices` ; } 
 function off { aws --dry-run ec2 stop-instances --instance-ids `<slices` ; }

@@ -42,4 +42,8 @@ redis "<redis command>"
 redis "<redis command>"
 redis "<redis command>"
 flush
+
+# firewall examples.. block and unblock IP numbers
+block 1.2.3.4
+
 ```
