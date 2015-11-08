@@ -13,7 +13,7 @@ rent m4.10xlarge 50
 tag Project test `all`
 
 # update and upgrade the OS on all servers in parallel
-map 'me ; apt-get update && apt-get upgrade'
+map 'apt-get update && apt-get upgrade'
 
 # deploy content across all servers
 map 'deploy'
